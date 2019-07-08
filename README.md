@@ -69,7 +69,7 @@ Sometimes you can only get certain champions in your composition, while better a
      - https://cdn.communitydragon.org/latest/champion/x/square.png
 
    This means that if these websites are down, the images aren't downloaded.
-   If this is the case, you can download the images manually by downloading the .zip-file in the repository.
+   If this is the case, you can download the images manually by downloading the .zip-file in the repository under the folder "Images".
 
    Extract the .ZIP-file in the "%appdata%\TFTCompositionSaver" directory, so that the structure is like
      * "%appdata%\TFTCompositionSaver\Champions"
