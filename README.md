@@ -66,7 +66,7 @@ Sometimes you can only get certain champions in your composition, while better a
 
    They are downloaded from the following websites:
      - http://raw.communitydragon.org/latest/game
-     - https://cdn.communitydragon.org/latest/champion/x/square.png
+     - https://cdn.communitydragon.org/latest/champion/74/square.png (the number is different for each champion)
 
    This means that if these websites are down, the images aren't downloaded.
    If this is the case, you can download the images manually by downloading the .zip-file in the repository under the folder "Images".
