@@ -62,7 +62,7 @@ Sometimes you can only get certain champions in your composition, while better a
    - The data is saved at "%appdata%\TFTCompositionSaver"
 
 3. When I open the application, all the images are gone and replaced with text!
-   - Images are downloaded the first time you open the application. Once downloaded, the images will be loaded in the next time the    -    application is started. If the application misses certain images they will be downloaded when the application is started.
+   - Images are downloaded the first time you open the application. Once downloaded, the images will be loaded in the next time the        application is started. If the application is missing certain images, they will be downloaded when the application is started.
 
    They are downloaded from the following websites:
      - http://raw.communitydragon.org/latest/game
