@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Garbage_white" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAAd0SU1FB+MGGhETCnA+4BwAAAOESURBVHhe7ZvBSxRhGMZXMCJB1OhQhtExgm4h
+        Xbp06T8oMOjWHyAepSQjgjx4ETwVakfBQwfBPEhI3eyPiCC6BEURdnB7nnmf2eadHWN3dtf5tv1+8LDy
+        PvO983yvs6jjbK1X1Ov1m9APqFMO1bI/QOAh6Cf0i+m7BPsN6RThgpAT0Hcm7gHsO6FThQkCDidRe8ew
+        ThUeCHcG+pjE7B3sf16nDAeEmoI+MGGOW9B1aLqEuI7r84zqtOGAUFctWxOndUgpuN7aODjoSzokDBDo
+        uAGM65BSYP2YtWniovxqfzKkAfB6gakyHEEPoFPJgSXheui++mV5A13WYdWCIPwubTFVhiPZXYH9rG1C
+        +vU12d0DTeehJ9Bii3oIrUMkH/Ip9BgqWtequJ598lcAeQE9gorWFYn7mtdWm4E5C5WlKGAv6eR8s9qy
+        R+ZAoC175A0E2rIH9W2z/8lJX+rt0kq+bW25GZi70HvoHfQW+gbl+QTR4zGhiHmYKw/zp1m5r11ttTWw
+        YA/Ksyg7KJjL4jn2ZJcDDfatj+O57KBgLovn2JddDjawPo44ANlBwVwWzxEHILscbGB9HHEAsoOCuSye
+        I7wBYH3h3/DH1VuFuRgux8kMADXeD3gNfYb4Cwn1BSq8fYX6MsRfUngcX5dlOVAfhdgn7fkVmpTtQL3a
+        KwD1G2Y7xmQ7UN8wu8GGLAfqRXeECm+HoV75ACbNdhw3gDWzG6zJcqBeNIAp2Q7UKx8A7wzniQOQ7UA9
+        DsDsBnEAshyoxwGY7YgDkO1APQ7AbEccgOxysIH1ccQByHagHgdgtiMOQLYD9TgAsxvEAchyoB4HYLYj
+        DkC2A/U4ALMdcQCyy8EG1scRByDbgXocgNmOgRrAWbMdgzEA1M5BLxPXU/ikKOqbZjfYlOVAfdxsR+ED
+        kqhXOoAR6DZ0F7oj8evCJ0VR58PQ93QcX6dlOVDnk6LZnjPQiGwH6tW+BVoF6/+//w2GAHNZPEccgOxy
+        sIH1cQzUAA6sj3sAsR8GkOY9kF0ONFiA+D/5LP1yBTD3guz2weL0wxD5zwI8Sw4IDOayeA22VO/opwsb
+        7CTt/vIKugLlP+RUpZiHubLsaAudgUYr0O+kZf88LM28K9pCedAkfRuknwrpF9az+TsGjVaTtv3DqqJ3
+        DpqlV8FS0rpeP9RraKS5lrK5uw4azyWnCY85RWyDWu0PpZ+4ou9lbUIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="missing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\missing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plus_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Plus_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plus_white_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Plus_white_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_assassin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_assassin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_blademaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_blademaster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_brawler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_brawler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_demon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_demon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_dragon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_dragon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_elementalist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_elementalist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_exile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_exile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_glacial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_glacial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_guardian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_guardian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_gunslinger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_gunslinger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_imperial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_imperial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_knight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_knight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_ninja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_ninja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_noble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_noble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_phantom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_phantom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_pirate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_pirate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_ranger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_ranger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_robot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_robot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_shapeshifter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_shapeshifter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_sorcerer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_sorcerer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_void" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_void.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_wild" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_wild.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trait_icon_yordle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Traits\trait_icon_yordle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SortDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\SortDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SortUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\SortUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Swap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Swap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\1star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\2star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\3star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Show" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Show.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Logo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TFT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TFT.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD9777A8-61B9-4F8F-B897-98447DE93F45}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TFT_CompositionSaver</RootNamespace>
+    <AssemblyName>TFT_CompositionSaver</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TFT_CompositionSaver.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\BuilderController.cs" />
+    <Compile Include="Controllers\Interfaces\IBuilderView.cs" />
+    <Compile Include="Controllers\Interfaces\IController.cs" />
+    <Compile Include="Controllers\Interfaces\IMainView.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="DAL\ApiData.cs" />
+    <Compile Include="DAL\CompSaverContext.cs" />
+    <Compile Include="DAL\Data.cs" />
+    <Compile Include="Enums\ActionMode.cs" />
+    <Compile Include="Helper\ApiDataHelper.cs" />
+    <Compile Include="Helper\ControlExtensions.cs" />
+    <Compile Include="Helper\SerializableDictionary.cs" />
+    <Compile Include="Helper\Utility.cs" />
+    <Compile Include="Models\API\ChampionData\Ability.cs" />
+    <Compile Include="Models\API\ChampionData\Champion.cs" />
+    <Compile Include="Models\API\ChampionData\Variable.cs" />
+    <Compile Include="Models\API\IResourceModel.cs" />
+    <Compile Include="Models\API\Trait.cs" />
+    <Compile Include="Models\ChampionSet.cs" />
+    <Compile Include="Models\Composition.cs" />
+    <Compile Include="Models\API\GameData.cs" />
+    <Compile Include="Models\API\ItemData\Effect.cs" />
+    <Compile Include="Models\API\ItemData\Item.cs" />
+    <Compile Include="Models\API\ChampionData\Stats.cs" />
+    <Compile Include="Views\Forms\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\AddChampRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\AddChampRow.Designer.cs">
+      <DependentUpon>AddChampRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Builder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\Builder.Designer.cs">
+      <DependentUpon>Builder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\ChampPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\ChampPicker.Designer.cs">
+      <DependentUpon>ChampPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\ChampRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\ChampRow.Designer.cs">
+      <DependentUpon>ChampRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\ItemPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\ItemPicker.Designer.cs">
+      <DependentUpon>ItemPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Forms\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\SelectionBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\SelectionBox.Designer.cs">
+      <DependentUpon>SelectionBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Forms\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\AddChampRow.resx">
+      <DependentUpon>AddChampRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\Builder.resx">
+      <DependentUpon>Builder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\ChampPicker.resx">
+      <DependentUpon>ChampPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\ChampRow.resx">
+      <DependentUpon>ChampRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\ItemPicker.resx">
+      <DependentUpon>ItemPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Forms\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\SelectionBox.resx">
+      <DependentUpon>SelectionBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\TFT.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Garbage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Garbage_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Plus_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Plus_white_28px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Plus_white_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\missing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\BFSword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\BladeOfTheRuinedKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\Bloodthirster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\ChainVest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\CursedBlade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\Darkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\DragonsClaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\ForceOfNature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\FrozenHeart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\FrozenMallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\GiantsBelt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\GuardianAngel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\GuinsoosRageblade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\HextechGunblade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\Hush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\InfinityEdge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\IonicSpark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\KnightsVow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\LocketOfTheIronSolari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\LudensEcho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\Morellonomicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\NeedlesslyLargeRod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\NegatronCloak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\PhantomDancer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\RabadonsDeathcap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\RapidFirecannon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\RecurveBow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\RedBuff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\Redemption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\RunaansHurricane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\SeraphsEmbrace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\Spatula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\SpearOfShojin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\StatikkShivv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\SwordBreaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\SwordOfTheDivine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\TearOfTheGoddess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\Thornmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\TitanicHydra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\WarmogsArmor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\YoumuusGhostblade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\Yuumi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\ZekesHerald.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Items\Zephyr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_assassin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_blademaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_brawler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_demon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_elementalist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_exile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_glacial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_guardian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_gunslinger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_imperial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_ninja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_noble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_phantom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_pirate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_ranger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_robot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_shapeshifter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_sorcerer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_void.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_wild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traits\trait_icon_yordle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Plus_white_smallpx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Plus_white_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\SortDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\SortUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Swap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\1star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\2star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\3star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+    <EmbeddedResource Include="Newtonsoft.Json.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
